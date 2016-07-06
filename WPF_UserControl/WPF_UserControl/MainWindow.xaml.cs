@@ -23,6 +23,7 @@ namespace WPF_UserControl
         public MainWindow()
         {
             InitializeComponent();
+            //some text
         }
     }
 }
