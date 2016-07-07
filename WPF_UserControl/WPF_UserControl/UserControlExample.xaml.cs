@@ -16,25 +16,13 @@ using System.Windows.Shapes;
 namespace WPF_UserControl
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserControlExample.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserControlExample : UserControl
     {
-        public MainWindow()
+        public UserControlExample()
         {
             InitializeComponent();
-
-            var model = new ModelObject()
-            {
-                Shoesize = 12,
-                Height = 34.5
-
-            };
-
-            this.DataContext = model;
-
-
-            
         }
     }
 }
