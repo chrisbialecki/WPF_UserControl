@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <local:UserControlExample HorizontalAlignment="Left" Margin="148,74,0,0" VerticalAlignment="Top"/>
+        <local:UserControlExample Margin="10" VerticalAlignment="Top" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

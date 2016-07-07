@@ -8,13 +8,15 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid x:Name="LayoutRoot" Background="White">
 
-        <StackPanel Orientation="Horizontal"
+        <StackPanel Orientation="Vertical"
                 VerticalAlignment="Top">
             <TextBlock Text="Shoesize:"
                  Width="100"
                  VerticalAlignment="Center"/>
             <TextBox Text="{Binding Path=Shoesize}"
                Width="100"/>
+            <TextBlock HorizontalAlignment="Center">Property read-out:</TextBlock>
+            <TextBox Text="{Binding Path=Shoesize}" Width="100"/>
         </StackPanel>
     </Grid>
 </UserControl>

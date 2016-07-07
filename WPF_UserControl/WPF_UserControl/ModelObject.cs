@@ -11,10 +11,12 @@ namespace WPF_UserControl
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        int _shoesize;
+
         public int Shoesize
         {
-            get;
-            set;
+            get { return _shoesize; }
+            set { PropertyChanged(this, new PropertyChangedEventArgs("Shoesize")); }
         }
 
         public double Height
