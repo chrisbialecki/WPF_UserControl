@@ -16,7 +16,11 @@ namespace WPF_UserControl
         public int Shoesize
         {
             get { return _shoesize; }
-            set { PropertyChanged(this, new PropertyChangedEventArgs("Shoesize")); }
+            set
+            {
+                _shoesize = value;
+                OnPropertyChanged("Shoesize");
+            }
         }
 
         public double Height
@@ -24,5 +28,13 @@ namespace WPF_UserControl
             get;
             set;
         }
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
     }
 }

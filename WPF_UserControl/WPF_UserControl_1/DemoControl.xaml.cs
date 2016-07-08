@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_UserControl
+namespace WPF_UserControl_1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DemoControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DemoControl : UserControl
     {
-        public MainWindow()
+        public DemoControl()
         {
-            InitializeComponent();         
-            
+            InitializeComponent();
         }
     }
 }
