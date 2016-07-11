@@ -24,5 +24,11 @@ namespace WPF_UserControl_1
         {
             InitializeComponent();
         }
+
+        private void OpenNewWindow_Click(object sender, RoutedEventArgs e)
+        {
+            var win2 = new Window2();
+            win2.Show();
+        }
     }
 }

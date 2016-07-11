@@ -18,7 +18,7 @@ namespace WPF_UserControl_1
 
         string _firstName;
         string _lastName;
-        int _age = 10;
+        int _age;
 
         public string FirstName
         {
@@ -27,6 +27,7 @@ namespace WPF_UserControl_1
             {
                 _firstName = value;
                 OnPropertyChanged("FullName");
+                OnPropertyChanged("FirstName");
             }
 
             
@@ -40,6 +41,7 @@ namespace WPF_UserControl_1
             {
                 _lastName = value;
                 OnPropertyChanged("FullName");
+                OnPropertyChanged("LastName");
             }
         }
 
@@ -52,9 +54,24 @@ namespace WPF_UserControl_1
         public int Age
         {
             get { return _age; }
-            set { _age = value; }
+            set
+            {
+                _age = value;
+                OnPropertyChanged("Age");
+            }
             
         }
+
+        static StudentModel _studentModel;
+
+        public static StudentModel GetStudentModel()
+        {
+            if (_studentModel == null)
+                _studentModel = new StudentModel();
+            return _studentModel;
+
+        }
+            
 
 
     }

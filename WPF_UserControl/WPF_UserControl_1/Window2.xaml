@@ -1,17 +1,18 @@
-﻿<Window x:Class="WPF_UserControl_1.MainWindow"
+﻿<Window x:Class="WPF_UserControl_1.Window2"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_UserControl_1"        
+        xmlns:local="clr-namespace:WPF_UserControl_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="350" Background="WhiteSmoke">
+        Title="Window2" Height="300" Width="300">
     <Grid>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <local:DemoControl/>
-        <Button Grid.Row="1" Width="100" Height="30" x:Name="OpenNewWindow" Click="OpenNewWindow_Click">new window</Button>
+        <Button Grid.Row="1" x:Name="CloseNewWindow" Width="100" Height="30" Click="CloseNewWindow_Click">close</Button>
     </Grid>
 </Window>

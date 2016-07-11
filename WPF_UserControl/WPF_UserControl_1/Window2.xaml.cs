@@ -10,20 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WPF_UserControl_1
 {
     /// <summary>
-    /// Interaction logic for DemoControl.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class DemoControl : UserControl
+    public partial class Window2 : Window
     {
-        public DemoControl()
+        public Window2()
         {
-            InitializeComponent();
-            DataContext = StudentModel.GetStudentModel();
+            InitializeComponent();        
+                        
+        }
+
+        private void CloseNewWindow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
