@@ -23,6 +23,7 @@ namespace WPF_UserControl_1
         public DemoControl()
         {
             InitializeComponent();
+            DataContext = new StudentModel();
         }
     }
 }
