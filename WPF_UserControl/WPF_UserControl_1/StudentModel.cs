@@ -71,8 +71,14 @@ namespace WPF_UserControl_1
             return _studentModel;
 
         }
+
+
+        //CommandOpenNewWindow _myCommand = new CommandOpenNewWindow();
+        //public CommandOpenNewWindow MyCommand
+        //{
+        //    get {return _myCommand; }
+        //}
             
-
-
+        
     }
 }
