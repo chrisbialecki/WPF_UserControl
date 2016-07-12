@@ -62,7 +62,9 @@ namespace WPF_UserControl_1
             
         }
 
+
         static StudentModel _studentModel;
+
 
         public static StudentModel GetStudentModel()
         {
