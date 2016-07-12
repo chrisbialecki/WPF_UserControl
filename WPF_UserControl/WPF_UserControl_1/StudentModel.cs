@@ -18,7 +18,7 @@ namespace WPF_UserControl_1
 
         string _firstName;
         string _lastName;
-        int _age;
+        int? _age;
 
         public string FirstName
         {
@@ -51,7 +51,7 @@ namespace WPF_UserControl_1
             get { return string.Format("{0} {1}", FirstName, LastName); }
         }
 
-        public int Age
+        public int? Age
         {
             get { return _age; }
             set
@@ -73,8 +73,9 @@ namespace WPF_UserControl_1
             return _studentModel;
 
         }
+
+        
             
-
-
+        
     }
 }

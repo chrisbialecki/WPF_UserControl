@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_UserControl_1"        
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="350" Background="WhiteSmoke">
+        Title="MainWindow" Height="350" Width="350" Background="WhiteSmoke">        
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <local:DemoControl/>
-        <Button Grid.Row="1" Width="100" Height="30" x:Name="OpenNewWindow" Click="OpenNewWindow_Click">new window</Button>
+        <Button Grid.Row="1" Width="100" Height="30" Command="{Binding MyCommand}" CommandParameter="{Binding .}">new window</Button>
     </Grid>
 </Window>
